@@ -1,0 +1,149 @@
+
+.facebook-style-btn{
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    padding: 5px 6px;
+}
+.facebook-style-dark{
+  /* horizonatl vertical border radius speard */
+  -moz-box-shadow: inset 0 1px 0 0 #2d519a;
+   -webkit-box-shadow: inset 0 1px 0 0 #2d519a;
+    box-shadow: inset 0 1px 0 0 #2d519a;
+   background-color: #385da3;
+    border-radius: 1px solid #2b4679;
+    color: white;
+   text-shadow: 0 5px 0 #57698b;
+}
+.facebook-style-dark:hover{
+    background-color: #2467e4; ;
+}
+.facebook-style-dark:active{
+    background-color: #0643b5; 
+    border-color:#0643b5 ;
+}
+.facebook-style-light{
+    background-color: #e5e1e1;
+    border: solid 1px #040000;
+    color: black;
+}
+.facebook-style-light:hover{
+    background-color:#e9ebee;
+}
+.facebook-style-light:active{
+    background: #d8dade;
+    border-color: #d8dade;
+
+}
+
+/* 3d btns */
+.btn-3d-1{
+    cursor: pointer;
+    position: relative;
+    background: rgb(178, 72, 90);
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    padding: 15px 24px;
+    /* hsl:h = hue s = saturation l = light */
+    box-shadow: -5px 6px 0 hsl(334deg 52% 71%);
+    outline: none;
+}
+.btn-3d-1:hover{
+    background: hsl(334deg 45% 60%);
+}
+.btn-3d-1:active{
+    background: rgb(218, 108, 127);
+    top: 3px;
+    left: -3px;
+    box-shadow: -3px 3px 0 hsl(334deg 52% 71%);
+}
+.btn-3d-1::before{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0 ;
+
+    border:solid 6px transparent;
+    border-right: solid 6px hsl(334deg 52% 71%) ;
+    border-left-width: 0;
+    background: none;
+    top: 0;
+    left: -6px;
+}
+.btn-3d-1::after{
+    position: absolute;
+    display: block;
+    content: "";
+    height: 0;
+    width: 0 ;
+
+    border:solid 6px transparent;
+    border-top: solid 6px hsl(334deg 52% 71%) ;
+    border-bottom-width: 0;
+    background: none;
+    right: 0;
+    bottom: -6px;
+}
+.btn-3d-1:active::before{
+ border: solid 3px transparent;
+ border-right: solid 3px  rgb(218, 108, 127);
+ border-left: 0;
+ left:-3px ;
+}
+.btn-3d-1:active::after{
+    border: solid 3px transparent;
+    border-top: solid 3px  rgb(218, 108, 127);
+    border-bottom: 0;
+    bottom:-3px ;
+   }
+
+.btn-3d-2{
+    cursor: pointer;
+position: relative;
+background: yellow;
+background: -webkit-radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+background: -o-radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+background: -moz-radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+background: radial-gradient(hsl(54,100%,50%),hsl(54,100%,40%));
+font-size: 1.4rem;
+text-shadow: 0 -1px 0 #c3af07;
+color: white;
+border: solid 1px hsl(54,100%,20%);
+border-radius: 100%;
+height: 100px;
+width: 100px;
+z-index: 4;
+outline: none;
+box-shadow:inset 0 1px 0 hsl(54, 100%, 50%),
+0 2px 0 hsl(54, 100%, 20%),
+0 3px 0 hsl(54, 100%, 18%),
+0 4px 0 hsl(54, 100%, 16%),
+0 5px 0 hsl(54, 100%, 14%),
+0 6px 0 hsl(54, 100%, 12%),
+0 7px 0 hsl(54, 100%, 10%),
+0 8px 0 hsl(54, 100%, 8%),
+0 9px 0 hsl(54, 100%, 6%);
+
+}
+.btn-3d-2:hover{
+background: -webkit-radial-gradient(hsl(54,100%,45%),hsl(54,100%,45%));
+background: -o-radial-gradient(hsl(54,100%,45%),hsl(54,100%,45%));
+background: -moz-radial-gradient(hsl(54,100%,45%),hsl(54,100%,45%));
+background: radial-gradient(hsl(54,100%,45%),hsl(54,100%,45%));
+}
+.btn-3d-2:active{
+    background: -webkit-radial-gradient(hsl(54,100%,35%),hsl(54,100%,30%));
+    background: -o-radial-gradient(hsl(54,100%,35%),hsl(54,100%,30%));
+    background: -moz-radial-gradient(hsl(54,100%,35%),hsl(54,100%,30%));
+    background: radial-gradient(hsl(54,100%,35%),hsl(54,100%,30%));
+    top:2px;
+    box-shadow:inset 0 1px 0 hsl(54, 100%, 50%),
+0 2px 0 hsl(54, 100%, 20%),
+0 3px 0 hsl(54, 100%, 18%),
+0 4px 0 hsl(54, 100%, 16%),
+0 5px 0 hsl(54, 100%, 14%),
+
+
+    }
